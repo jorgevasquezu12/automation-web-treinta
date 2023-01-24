@@ -1,0 +1,17 @@
+[
+  {
+    "nameProduct": "Product 1",
+    "codeProduct": "P1",
+    "priceProduct": 100,
+    "priceunitProduct": "99",
+    "barcodeProduct": "123456789",
+    "descriptionProduct": "Description Product 1",
+    "costProduct": 50,
+    "categoryProduct": "Category 1",
+    "quantityProduct": 1102
+  },
+
+  {
+
+  }
+]

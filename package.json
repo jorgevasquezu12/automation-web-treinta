@@ -1,0 +1,24 @@
+{
+  "name": "automation-web-treinta",
+  "version": "1.0.0",
+  "description": "Pruebas automatizadas E2E para la aplicación web treinta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "allure:ventas": "cypress run --browser chrome --spec cypress/e2e/Ventas/*.js --env allure=true",
+    "allure:productos": "cypress run --browser chrome --spec cypress/e2e/Producto/*.js --env allure=true",
+    "allure:clear": "rm -r allure-results/ allure-results cypress/screenshots cypress/videos || true",
+    "allure:report": "allure generate allure-results --clean -o allure-resultos",
+    "allure:history": "mv -f allure-results/history allure-results/history && rm -r allure-report/history || true"
+
+  },
+  "author": "QA Jorge Eider Vasquez",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "cypress": "^12.0.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}

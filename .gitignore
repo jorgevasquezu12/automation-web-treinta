@@ -1,0 +1,7 @@
+.idea
+allure-results
+.Ds_Store
+cypress/downloads
+cypress.env.json
+cypress/screenshots
+node_modules
